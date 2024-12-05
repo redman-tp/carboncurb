@@ -47,15 +47,65 @@
 /* Modal */
 .cc-logo {
   line-height: normal;
-  justify-content: center;
-  align-items: center;
   display: flex !important;
+  align-self: self-start;
+  /* justify-self: center; */
 }
+
 
 .cc-logo span{
   font-size: 1.5vw;
   font-weight: 700;
   color: rgb(9, 59, 42);
+  
+}
+
+@media only screen and (max-width: 768px) {
+  .cc-logo a{
+  }
+  .cc-logo span{
+    font-size: 4vw;
+    width: 120px !important;
+    font-weight: 700;
+    color: rgb(9, 59, 42);
+    hyphens:auto;
+    text-align: center;
+    margin: 0;
+    word-wrap: break-word;
+  }
+  .cus-header{
+    display: flex !important;
+    /* height: 30px; */
+    padding: 5vw;
+    
+  }
+  .cus-header > div{
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    flex-grow: 1;
+  }
+  #about{
+    align-items: center;
+    display: flex;
+  }
+  #about *{
+    text-align: center;
+  }
+  #about #moreAbout{
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+  }
+  #about #moreAbout a{
+    margin: 0;
+    margin-top: 20px;
+    align-self: center;
+  }
+  .custom-modal-content {
+    /* background: #fff; */
+    width: 90vw !important;
+  }
 }
 
 .modal {
