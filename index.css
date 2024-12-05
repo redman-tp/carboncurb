@@ -43,6 +43,11 @@
   filter: invert(1);
 }
 
+.cus-header > div{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2vw;
+}
 
 /* Modal */
 .cc-logo {
